@@ -10,6 +10,7 @@ mongoose.connect('mongodb://localhost:27017')
       console.log('Backend started! 🚀');
     });
 
+    app.use(express.json());
     app.use(router);
   })
   .catch(error => console.log('connection error of mongodb', error));
