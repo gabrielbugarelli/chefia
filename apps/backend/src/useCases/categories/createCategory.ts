@@ -10,6 +10,6 @@ export const createCategory = async (request: Request, response: Response) => {
   }
   catch(error) {
     console.log(error);
-    response.sendStatus(500);
+    response.sendStatus(500).json(error);
   }
 };
