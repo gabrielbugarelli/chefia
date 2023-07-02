@@ -17,7 +17,7 @@ export const createProduct = async (request: Request, response: Response) => {
       imagePath,
       name,
       price: Number(price),
-      ingredients: JSON.parse(ingredients)
+      ingredients: ingredients ? JSON.parse(ingredients) : []
     });
 
     return response.status(201).json(product);
