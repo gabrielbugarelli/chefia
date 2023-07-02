@@ -1,4 +1,4 @@
-import { Request, Response, json } from 'express';
+import { Request, Response } from 'express';
 import { Product } from '../../models/Product';
 
 export const createProduct = async (request: Request, response: Response) => {
