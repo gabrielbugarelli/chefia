@@ -1,5 +1,5 @@
 export const App = () => {
   return (
-    <h1>Yes baby</h1>
-  )
-}
+    <h1>Yearrrr baby</h1>
+  );
+};
