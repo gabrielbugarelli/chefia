@@ -8,7 +8,7 @@ mongoose.connect('mongodb://localhost:27017')
     const app = express();
 
     app.listen(3333, () => {
-      console.log('Backend started! 🚀');
+      console.log('=> Backend started on port 🚀: http://localhost:3333/');
     });
 
     app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
