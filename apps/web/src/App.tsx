@@ -1,5 +1,10 @@
+import { GlobalStyles } from './styles/GlobalStyles';
+
 export const App = () => {
   return (
-    <h1>Yearrrr baby</h1>
+    <>
+      <GlobalStyles />
+      <h1>Yearrrr baby</h1>
+    </>
   );
 };
